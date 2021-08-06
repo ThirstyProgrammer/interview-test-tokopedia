@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="filter">Filter</string>
+    <string name="price">Harga</string>
+    <string name="minimum">Terendah</string>
+    <string name="maximum">Tertinggi</string>
+    <string name="submit">Terapkan</string>
+    <string name="reset">Reset</string>
+    <string name="location">Lokasi</string>
+    <string name="other">Other</string>
+    <string name="message_price_invalid">Harga terendah harus lebih kecil dari pada harga tertinggi.</string>
+    <string name="percentage">%1$d%%</string>
+    <string name="message_empty_list">Produk tidak ditemukan, \nsilakan cari lagi…</string>
+</resources>

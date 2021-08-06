@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="100dp"
+            android:layout_height="4dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/bg_rounded_primary" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/margin_between_content"
+            android:layout_toStartOf="@id/reset"
+            android:text="@string/filter"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/reset"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="?attr/selectableItemBackground"
+            android:text="@string/reset"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_between_content"
+        android:text="@string/location"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textStyle="bold" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chip_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:singleSelection="true"
+        app:chipSpacingVertical="8dp"
+        app:chipSpacingHorizontal="16dp"
+        android:theme="@style/Theme.MaterialComponents.Light"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_between_content"
+        android:text="@string/price"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_minimum_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_between_content"
+            android:text="@string/minimum"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/min_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_between_content"
+            android:layout_toEndOf="@id/title_minimum_price"
+            android:gravity="end"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+            tools:text="Rp10.000" />
+    </RelativeLayout>
+
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/slider_min_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        android:value="1000.0"
+        android:valueFrom="1000.0"
+        android:valueTo="100000.0"
+        android:stepSize="1000.0"
+        app:thumbColor="@color/colorPrimaryDark"
+        app:trackColorActive="@color/colorPrimaryDark"
+        app:trackColorInactive="@color/colorPrimaryLight" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title_maximum_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_between_content"
+            android:text="@string/maximum"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/max_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_between_content"
+            android:layout_toEndOf="@id/title_maximum_price"
+            android:gravity="end"
+            tools:text="Rp1.000.000"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead" />
+    </RelativeLayout>
+
+    <com.google.android.material.slider.Slider
+        android:id="@+id/slider_max_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.MaterialComponents.Light"
+        android:value="1000.0"
+        android:valueFrom="1000.0"
+        android:valueTo="100000.0"
+        android:stepSize="1000.0"
+        app:thumbColor="@color/colorPrimaryDark"
+        app:trackColorActive="@color/colorPrimaryDark"
+        app:trackColorInactive="@color/colorPrimaryLight" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_between_content"
+        android:background="@drawable/bg_rounded_primary"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/submit"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+    <dimen name="discount_padding_vertical">4dp</dimen>
+    <dimen name="discount_padding_horizontal">8dp</dimen>
+    <dimen name="margin_between_content">16dp</dimen>
+    <dimen name="small_margin_between_content">4dp</dimen>
+</resources>

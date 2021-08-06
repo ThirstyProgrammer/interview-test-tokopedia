@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="maps">Maps</string>
+    <string name="network_error">Error Network Request</string>
+    <string name="country_not_found">Negara yang kamu cari tidak ditemukan, silakan coba lagi…</string>
+    <string name="country_data_not_found">Detail Negara Tidak Ditemukan!</string>
+    <string name="country_name">Nama negara: %1$s</string>
+    <string name="country_capital">Ibukota : %1$s</string>
+    <string name="country_population">Jumlah penduduk: %1$d</string>
+    <string name="country_call_code">Kode telepon: %1$s</string>
+</resources>
